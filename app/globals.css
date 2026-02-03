@@ -1,26 +1,92 @@
 @import "tailwindcss";
 
+@plugin "tailwindcss-animate";
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Light Mode Colors */
+  --background: #F8F9FA;
+  --foreground: #2C3E50;
+  
+  --primary: #0F6FB4;
+  --primary-foreground: #FFFFFF;
+  
+  --secondary: #5DADE2;
+  --secondary-foreground: #FFFFFF;
+  
+  --accent: #2C3E50;
+  --accent-foreground: #FFFFFF;
+  
+  --muted: #F1F5F9;
+  --muted-foreground: #7F8C8D;
+  
+  --card: #FFFFFF;
+  --card-foreground: #2C3E50;
+  
+  --border: #E2E8F0;
+  --input: #E2E8F0;
+  
+  --radius: 0.5rem;
+}
+
+.dark {
+  /* Dark Mode Colors */
+  --background: #0F1419;
+  --foreground: #E8EAED;
+  
+  --primary: #2E8FD1;
+  --primary-foreground: #FFFFFF;
+  
+  --secondary: #4A9FDB;
+  --secondary-foreground: #FFFFFF;
+  
+  --accent: #1E2936;
+  --accent-foreground: #E8EAED;
+  
+  --muted: #1E2936;
+  --muted-foreground: #9CA3AF;
+  
+  --card: #1E2936;
+  --card-foreground: #E8EAED;
+  
+  --border: #2C3E50;
+  --input: #2C3E50;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  
+  --color-border: var(--border);
+  --color-input: var(--input);
+  
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: calc(var(--radius));
+  --radius-lg: calc(var(--radius) + 2px);
+  --radius-xl: calc(var(--radius) + 4px);
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html {
+  scroll-behavior: smooth;
 }
