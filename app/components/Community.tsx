@@ -62,33 +62,33 @@ export default function Community() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <div className="bg-card border border-border rounded-xl shadow-2xl p-6 relative overflow-hidden">
-                <div className="absolute top-0 left-0 w-full h-12 bg-muted border-b border-border flex items-center px-4 gap-2">
+            <div className="bg-card border border-border rounded-xl shadow-2xl relative overflow-hidden flex flex-col z-0">
+                <div className="h-12 bg-muted border-b border-border flex items-center px-4 gap-2 shrink-0 relative z-10">
                     <div className="w-3 h-3 rounded-full bg-red-400" />
                     <div className="w-3 h-3 rounded-full bg-yellow-400" />
                     <div className="w-3 h-3 rounded-full bg-green-400" />
                 </div>
-                <div className="mt-8 space-y-4">
+                <div className="p-6 space-y-4 relative z-0">
                      <div className="flex gap-4">
-                        <div className="w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-700 flex-shrink-0" />
+                        <div className="w-10 h-10 rounded-full bg-border flex-shrink-0" />
                         <div className="space-y-2 w-full">
-                            <div className="h-4 bg-slate-200 dark:bg-slate-700 rounded w-1/4" />
-                            <div className="h-4 bg-slate-100 dark:bg-slate-800 rounded w-full" />
-                            <div className="h-4 bg-slate-100 dark:bg-slate-800 rounded w-3/4" />
+                            <div className="h-4 bg-border rounded w-1/4" />
+                            <div className="h-4 bg-muted rounded w-full" />
+                            <div className="h-4 bg-muted rounded w-3/4" />
                         </div>
                      </div>
                      <div className="flex gap-4 pl-12">
                         <div className="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900 flex-shrink-0" />
                         <div className="space-y-2 w-full">
-                            <div className="h-4 bg-slate-200 dark:bg-slate-700 rounded w-1/4" />
-                            <div className="h-4 bg-slate-100 dark:bg-slate-800 rounded w-full" />
+                            <div className="h-4 bg-border rounded w-1/4" />
+                            <div className="h-4 bg-muted rounded w-full" />
                         </div>
                      </div>
                      <div className="flex gap-4">
-                        <div className="w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-700 flex-shrink-0" />
+                        <div className="w-10 h-10 rounded-full bg-border flex-shrink-0" />
                         <div className="space-y-2 w-full">
-                             <div className="h-4 bg-slate-200 dark:bg-slate-700 rounded w-1/4" />
-                             <div className="h-4 bg-slate-100 dark:bg-slate-800 rounded w-5/6" />
+                             <div className="h-4 bg-border rounded w-1/4" />
+                             <div className="h-4 bg-muted rounded w-5/6" />
                         </div>
                      </div>
                 </div>
