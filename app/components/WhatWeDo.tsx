@@ -7,6 +7,7 @@ import { FaCode } from 'react-icons/fa6';
 const EVENTS = [
   { title: 'Monthly Meetups', description: 'Regular gatherings for networking and learning.' },
   { title: 'Hands-On Workshops', description: 'Practical skills development sessions.' },
+  { title: 'Community Support', description: 'Mentorship, code reviews, and career guidance.' },
 ];
 
 export default function WhatWeDo() {
