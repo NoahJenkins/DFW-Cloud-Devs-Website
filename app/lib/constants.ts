@@ -22,7 +22,7 @@ export const TECH_STACK = [
 export const SOCIAL_LINKS = {
   discord: process.env.NEXT_PUBLIC_DISCORD_INVITE || '#',
   luma: process.env.NEXT_PUBLIC_LUMA_CALENDAR_ID ? `https://lu.ma/${process.env.NEXT_PUBLIC_LUMA_CALENDAR_ID}` : 'https://lu.ma/dfw-cloud-devs', // Fallback or env var
-  linkedin: process.env.NEXT_PUBLIC_LINKEDIN_URL || '#',
+  linkedin: process.env.NEXT_PUBLIC_LINKEDIN_URL || 'https://www.linkedin.com/company/dfw-cloud-devs',
   twitter: process.env.NEXT_PUBLIC_X_URL || '#',
 };
 
