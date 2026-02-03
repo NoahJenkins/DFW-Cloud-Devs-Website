@@ -35,7 +35,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-3xl mx-auto"
         >
-          Join 8,000+ developers building the future of cloud computing in Texas.
+          Join 1+ developers building the future of cloud computing in Texas.
         </motion.p>
 
         <motion.div

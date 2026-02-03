@@ -21,7 +21,7 @@ export default function Community() {
           >
             <h2 className="text-3xl md:text-5xl font-bold mb-6">Join Our Community</h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Connect with 8,000+ cloud developers in the DFW area. Get help, share knowledge, and stay updated on events.
+              Connect with 1+ cloud developers in the DFW area. Get help, share knowledge, and stay updated on events.
             </p>
             
             <ul className="space-y-4 mb-8">

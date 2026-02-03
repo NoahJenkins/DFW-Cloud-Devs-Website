@@ -7,8 +7,8 @@ export const NAV_LINKS = [
 ];
 
 export const STATS = [
-  { label: 'Members', value: '8,000+' },
-  { label: 'Events Held', value: '129+' },
+  { label: 'Members', value: '1+' },
+  { label: 'Events Held', value: '0' },
   { label: 'Technologies', value: 'All' },
 ];
 
@@ -28,6 +28,6 @@ export const SOCIAL_LINKS = {
 
 export const SITE_CONFIG = {
   name: 'DFW Cloud Devs',
-  description: 'Where DFW connects & grows. Join 8,000+ developers building the future of cloud computing in Texas.',
+  description: 'Where DFW connects & grows. Join 1+ developers building the future of cloud computing in Texas.',
   year: new Date().getFullYear(),
 };
