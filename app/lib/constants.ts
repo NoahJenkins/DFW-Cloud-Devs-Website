@@ -13,9 +13,9 @@ export const STATS = [
 ];
 
 export const TECH_STACK = [
-  { category: 'Languages', items: ['JavaScript/TypeScript', 'Python', 'Go', 'Rust', 'C#/.NET', 'Java'] },
-  { category: 'Cloud', items: ['AWS', 'Azure', 'Google Cloud', 'DigitalOcean', 'Cloudflare'] },
-  { category: 'DevOps', items: ['Docker', 'Kubernetes', 'Terraform', 'CI/CD'] },
+  { category: 'Languages', items: ['JavaScript/TypeScript', 'Python', 'Go'] },
+  { category: 'Cloud', items: ['AWS', 'Azure', 'Google Cloud', 'DigitalOcean', 'Vercel'] },
+  { category: 'DevOps', items: ['Docker', 'Terraform', 'Bicep', 'CI/CD'] },
   { category: 'Mobile & AI', items: ['React Native', 'iOS/Android', 'Machine Learning', 'LLMs', 'OpenAI'] },
 ];
 

@@ -7,9 +7,6 @@ import { FaCode } from 'react-icons/fa6';
 const EVENTS = [
   { title: 'Monthly Meetups', description: 'Regular gatherings for networking and learning.' },
   { title: 'Hands-On Workshops', description: 'Practical skills development sessions.' },
-  { title: 'The Commit Your Code Conference', description: 'Annual flagship conference.' },
-  { title: 'Cohorts & Learning Groups', description: 'Structured learning programs.' },
-  { title: 'Mini Tech Conferences', description: 'Themed events like "A Night of AI".' },
 ];
 
 export default function WhatWeDo() {
@@ -41,7 +38,7 @@ export default function WhatWeDo() {
         </div>
 
         <div className="text-center mb-12">
-          <h3 className="text-2xl font-bold mb-4">Technologies We Support</h3>
+          <h3 className="text-2xl font-bold mb-4">Technologies We Cover</h3>
           <p className="text-muted-foreground">All-inclusive approach to the modern tech stack</p>
         </div>
 
