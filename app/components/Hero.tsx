@@ -54,7 +54,7 @@ export default function Hero() {
             href={SOCIAL_LINKS.discord}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-8 py-4 bg-white dark:bg-slate-800 text-foreground border border-border rounded-lg font-semibold text-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-transform hover:scale-105"
+            className="px-8 py-4 bg-white dark:bg-slate-800 text-primary dark:text-white border border-primary/20 dark:border-slate-700 rounded-lg font-semibold text-lg hover:bg-blue-50 dark:hover:bg-slate-700 transition-transform hover:scale-105"
           >
             Join Our Discord
           </a>
