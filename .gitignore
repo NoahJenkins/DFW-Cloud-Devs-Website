@@ -46,3 +46,26 @@ plan.md
 CLAUDE.md
 AGENTS.md
 GEMINI.md
+
+# Added by OnboardCopilot: IDE and editor files
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+.idea/
+*.swp
+*.swo
+*~
+
+# Added by OnboardCopilot: environment and secrets
+.env
+.env.local
+.env.*.local
+*.key
+secrets.yml
+
+# Added by OnboardCopilot: generic logs and OS files
+*.log
+logs/
+Thumbs.db
+desktop.ini
