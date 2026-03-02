@@ -42,3 +42,7 @@ next-env.d.ts
 
 #AI
 plan.md
+/.gemini
+CLAUDE.md
+AGENTS.md
+GEMINI.md
