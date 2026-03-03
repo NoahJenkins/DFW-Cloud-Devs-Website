@@ -19,11 +19,15 @@ Last Updated: 2026-03-02
 - [x] Run dependency/security audit
 - [x] Review secret handling and `.gitignore` coverage
 - [ ] Address critical/high findings
+- [ ] Execute dependency remediation plan (`docs/context/2026-03-02-dependency-remediation-plan.md`)
+- [ ] Add Dependabot or Renovate for automated security updates
+- [ ] Add CI audit gate for dependency vulnerabilities
 
 ## Blocked
 - [ ] # TODO: Decide whether to standardize on pnpm-only lockfile strategy (`package-lock.json` vs `pnpm-lock.yaml`)
 
 ## Follow-ups
+- [ ] # TODO: Assign owner for dependency remediation phases and target completion date
 - [ ] # TODO: Add team-specific onboarding tasks
 - [ ] # TODO: Assign owners and due dates for open items
 

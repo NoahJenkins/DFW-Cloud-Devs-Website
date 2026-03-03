@@ -20,7 +20,7 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
-            Where DFW's <br />
+            Where DFW&apos;s <br />
             <span className="text-primary bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-600 dark:to-blue-400">
               Cloud Developers
             </span>{' '}
