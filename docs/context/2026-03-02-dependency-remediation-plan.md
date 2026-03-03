@@ -3,6 +3,13 @@
 ## Summary
 This plan tracks remediation for high/moderate transitive dependency vulnerabilities identified in the initial security baseline (`pnpm audit`). Findings are currently concentrated in linting/tooling transitive chains and should be addressed through controlled dependency upgrades and policy updates. The goal is to eliminate high-severity findings without destabilizing local developer workflows.
 
+### Phase Status (Updated 2026-03-03)
+- ✅ **Phase 1 completed**: compatibility matrix created and safe transitive override patch applied.
+- ✅ Post-phase audit: 0 high / 0 moderate / 0 advisories.
+- ✅ **Phase 2 completed**: Dependabot enabled, CI high/critical audit gate added, pnpm-only lockfile policy enforced.
+- ✅ **Phase 3 completed (scoped)**: React patch modernization landed; ESLint 10 spike tested and rolled back due plugin incompatibility.
+- ➡️ Remaining phases focus on optional direct dependency modernization batches and future ESLint 10 re-evaluation when ecosystem support stabilizes.
+
 ## Options/Findings
 
 ### Current Audit Snapshot (2026-03-02)

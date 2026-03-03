@@ -1,6 +1,6 @@
 # Project Task Tracker
 
-Last Updated: 2026-03-02
+Last Updated: 2026-03-03
 
 > Living document for major project tasks. Update status continuously during planning and implementation.
 
@@ -18,13 +18,16 @@ Last Updated: 2026-03-02
 ## Security & Quality
 - [x] Run dependency/security audit
 - [x] Review secret handling and `.gitignore` coverage
-- [ ] Address critical/high findings
-- [ ] Execute dependency remediation plan (`docs/context/2026-03-02-dependency-remediation-plan.md`)
-- [ ] Add Dependabot or Renovate for automated security updates
-- [ ] Add CI audit gate for dependency vulnerabilities
+- [x] Address critical/high findings
+- [x] Execute dependency remediation plan (`docs/context/2026-03-02-dependency-remediation-plan.md`) *(Phase 1 + Phase 2 complete)*
+- [x] Add Dependabot or Renovate for automated security updates
+- [x] Add CI audit gate for dependency vulnerabilities
+- [x] Modernize direct React dependencies (patch-level)
+- [ ] Evaluate ESLint 10 adoption after plugin ecosystem compatibility updates
 
 ## Blocked
-- [ ] # TODO: Decide whether to standardize on pnpm-only lockfile strategy (`package-lock.json` vs `pnpm-lock.yaml`)
+- [x] # TODO: Decide whether to standardize on pnpm-only lockfile strategy (`package-lock.json` vs `pnpm-lock.yaml`)
+- [x] # TODO: Resolve multi-lockfile workspace warning during Next build (remove unused lockfile or set explicit Turbopack root)
 
 ## Follow-ups
 - [ ] # TODO: Assign owner for dependency remediation phases and target completion date

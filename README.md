@@ -18,8 +18,9 @@ This site provides a central home for the DFW Cloud Devs community, including:
 ### Installation
 1. Clone the repository
 2. Install dependencies: `pnpm install`
-3. No `.env.example` is currently generated because no local `.env` file exists in this repo
-4. Configure optional environment variables (see Configuration section)
+3. This repository is pnpm-only (`pnpm-lock.yaml` is the canonical lockfile)
+4. No `.env.example` is currently generated because no local `.env` file exists in this repo
+5. Configure optional environment variables (see Configuration section)
 
 ### Running Locally
 Development server: `pnpm dev`
