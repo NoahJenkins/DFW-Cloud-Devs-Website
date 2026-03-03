@@ -19,7 +19,7 @@ Phase 2 was executed to operationalize dependency risk controls: automated depen
   - Added `.npmrc` with `package-manager-strict=true`.
 
 ### Build/Tooling Stability
-- Updated `next.config.ts` with explicit `turbopack.root` using `process.cwd()` to prevent root inference ambiguity in environments with external lockfiles.
+- Updated `next.config.ts` with explicit `turbopack.root` using config-file-relative project path resolution (via `import.meta.url`) to prevent root inference ambiguity regardless launch directory.
 
 ### Validation Expectations
 - `pnpm lint` should remain green.
