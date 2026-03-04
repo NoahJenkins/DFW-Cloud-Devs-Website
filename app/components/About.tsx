@@ -11,11 +11,9 @@ export default function About() {
     <section id="about" className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">About DFW Cloud Devs</h2>
+          <h2 className="text-3xl md:text-5xl font-bold mb-6">Who We Are</h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            DFW Cloud Devs is a 100% volunteer-run community bringing together software developers
-            across the Dallas-Fort Worth metroplex. Our mission is to bring as much value and resources
-            as possible to build a thriving community for the local software developer market.
+            DFW Cloud Devs is a group for developers and cloud engineers of all backgrounds and skill levels in DFW Texas. Our mission is to bring the community together and learn best practices and technologies so we can all build awesome software solutions and deploy them to the Cloud.
           </p>
         </div>
 

@@ -5,60 +5,64 @@ import { SOCIAL_LINKS } from '../lib/constants';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
-      {/* Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background via-blue-50/50 to-blue-100/50 dark:from-background dark:via-blue-950/20 dark:to-slate-900/50 -z-10" />
+    <section className="relative min-h-screen flex items-center pt-16 bg-grid-pattern">
+      <div className="absolute inset-0 bg-background/80 dark:bg-background/90 -z-10" />
       
-      {/* Decorative Circles */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl -z-10 animate-pulse" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-3xl -z-10 animate-pulse delay-700" />
-
-      <div className="container mx-auto px-4 text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
-            Where DFW&apos;s <br />
-            <span className="text-primary bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-600 dark:to-blue-400">
-              Cloud Developers
-            </span>{' '}
-            <br />
-            Connect & Grow
-          </h1>
-        </motion.div>
-
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-3xl mx-auto"
-        >
-          Join 1+ developers building the future of cloud computing in Texas.
-        </motion.p>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center"
-        >
-          <a
-            href="#events"
-            className="px-8 py-4 bg-primary text-primary-foreground rounded-lg font-semibold text-lg hover:bg-blue-700 transition-transform hover:scale-105 shadow-lg shadow-blue-500/20"
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col lg:flex-row items-center gap-12">
+          {/* Left Column: Text */}
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            className="flex-1 text-left"
           >
-            View Upcoming Events
-          </a>
-          <a
-            href={SOCIAL_LINKS.discord}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-8 py-4 bg-white dark:bg-slate-800 text-primary dark:text-white border border-primary/20 dark:border-slate-700 rounded-lg font-semibold text-lg hover:bg-blue-50 dark:hover:bg-slate-700 transition-transform hover:scale-105"
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
+              Where DFW&apos;s <br />
+              <span className="text-primary bg-clip-text text-transparent bg-gradient-to-r from-primary to-emerald-500 dark:to-emerald-400">
+                Cloud Developers
+              </span>{' '}
+              <br />
+              Connect & Grow
+            </h1>
+            <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-2xl">
+              Join 1+ developers building the future of cloud computing in Texas.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a
+                href={SOCIAL_LINKS.discord}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-4 bg-transparent border-2 border-primary text-primary rounded-md font-mono font-semibold text-lg hover:bg-primary/10 transition-transform hover:-translate-y-1 text-center"
+              >
+                $ join --discord
+              </a>
+            </div>
+          </motion.div>
+
+          {/* Right Column: Graphic */}
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="flex-1 hidden lg:flex justify-center"
           >
-            Join Our Discord
-          </a>
-        </motion.div>
+            <div className="relative w-full max-w-md aspect-square rounded-2xl border border-border bg-card shadow-2xl overflow-hidden flex flex-col">
+              <div className="h-8 bg-muted border-b border-border flex items-center px-4 gap-2">
+                <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                <div className="w-3 h-3 rounded-full bg-green-500"></div>
+              </div>
+              <div className="p-6 font-mono text-sm sm:text-base text-muted-foreground flex-1 flex flex-col justify-center">
+                <p><span className="text-primary">root@dfw-cloud-devs</span>:~# status</p>
+                <p className="text-emerald-500">● Core Infrastructure Systems Operational</p>
+                <p className="text-cyan-500 mt-2">→ Connecting to local cluster...</p>
+                <p className="text-emerald-500">✓ Connected successfully</p>
+                <p className="mt-4"><span className="text-primary">root@dfw-cloud-devs</span>:~# deploy network <span className="animate-pulse">_</span></p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
       </div>
     </section>
   );

@@ -1,15 +1,13 @@
 export const NAV_LINKS = [
-  { name: 'About', href: '#about' },
-  { name: 'What We Do', href: '#what-we-do' },
+  { name: 'Who We Are', href: '#about' },
   { name: 'Community', href: '#community' },
-  { name: 'Events', href: '#events' },
   { name: 'Connect', href: '#connect' },
 ];
 
 export const STATS = [
   { label: 'Members', value: '1+' },
   { label: 'Events Held', value: '0' },
-  { label: 'Technologies', value: 'All' },
+  { label: 'Technologies', value: 'Cloud & AI' },
 ];
 
 export const TECH_STACK = [
@@ -28,6 +26,6 @@ export const SOCIAL_LINKS = {
 
 export const SITE_CONFIG = {
   name: 'DFW Cloud Devs',
-  description: 'Where DFW connects & grows. Join 1+ developers building the future of cloud computing in Texas.',
+  description: 'A networking group for developers and cloud engineers of all backgrounds in DFW Texas to connect, learn best practices, and build awesome software solutions for the Cloud.',
   year: new Date().getFullYear(),
 };

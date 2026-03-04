@@ -21,14 +21,13 @@ export default function Community() {
           >
             <h2 className="text-3xl md:text-5xl font-bold mb-6">Join Our Community</h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Connect with 1+ cloud developers in the DFW area. Get help, share knowledge, and stay updated on events.
+              Connect with cloud developers in the DFW area. Get help, share knowledge, and stay updated on events.
             </p>
             
             <ul className="space-y-4 mb-8">
               {[
                 'Daily discussions on cloud architecture & DevOps',
                 'Job opportunities and career advice',
-                'Code reviews and pair programming',
                 'Early access to event announcements'
               ].map((item, i) => (
                 <li key={i} className="flex items-center gap-3">
