@@ -42,10 +42,13 @@ next-env.d.ts
 
 #AI
 plan.md
+GEMINI.md
 /.gemini
 CLAUDE.md
+/.claude
 AGENTS.md
-GEMINI.md
+/.agents
+
 
 # Added by OnboardCopilot: IDE and editor files
 .vscode/*
