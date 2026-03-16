@@ -27,7 +27,7 @@ jobs:
 
       - name: Validate changed files against allowlist
         id: changed-files
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8
         with:
           script: |
             const prNumber = context.payload.pull_request.number;
@@ -72,7 +72,7 @@ jobs:
           update_ok=false
 
           case "$PACKAGE_ECOSYSTEM" in
-            npm|github-actions)
+            npm_and_yarn|github-actions)
               ecosystem_ok=true
               ;;
           esac
@@ -80,6 +80,12 @@ jobs:
           case "$UPDATE_TYPE" in
             version-update:semver-patch|version-update:semver-minor)
               update_ok=true
+              ;;
+            version-update:semver-major)
+              # Allow major bumps for github-actions — runtime upgrades are safe
+              if [[ "$PACKAGE_ECOSYSTEM" == "github-actions" ]]; then
+                update_ok=true
+              fi
               ;;
           esac
 
@@ -99,7 +105,7 @@ jobs:
 
       - name: Auto-approve Dependabot PR
         if: steps.eligibility.outputs.eligible == 'true'
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8
         with:
           script: |
             try {
@@ -120,7 +126,7 @@ jobs:
 
       - name: Enable native auto-merge (squash)
         if: steps.eligibility.outputs.eligible == 'true'
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8
         with:
           script: |
             const pullRequestId = context.payload.pull_request.node_id;
