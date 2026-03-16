@@ -1,6 +1,6 @@
 # Project Task Tracker
 
-Last Updated: 2026-03-03
+Last Updated: 2026-03-16
 
 > Living document for major project tasks. Update status continuously during planning and implementation.
 
@@ -24,6 +24,7 @@ Last Updated: 2026-03-03
 - [x] Add Dependabot or Renovate for automated security updates
 - [x] Add CI audit gate for dependency vulnerabilities
 - [x] Modernize direct React dependencies (patch-level)
+- [x] Fix Dependabot auto-merge workflow (`npm_and_yarn` ecosystem name, repo auto-merge enablement, github-actions major bumps) — see `docs/context/2026-03-16-dependabot-auto-merge-fix.md`
 - [ ] Evaluate ESLint 10 adoption after plugin ecosystem compatibility updates
 
 ## Blocked

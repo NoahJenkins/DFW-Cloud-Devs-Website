@@ -16,4 +16,7 @@
 - [2026-03-02-onboarding-report](./2026-03-02-onboarding-report.md)
   - Summary of onboarding automation changes
 
+- [2026-03-16-dependabot-auto-merge-fix](./2026-03-16-dependabot-auto-merge-fix.md)
+  - Fixed `npm_and_yarn` ecosystem name mismatch, enabled repo auto-merge, allowed github-actions major bumps, re-triggered stale PRs
+
 <!-- Added by OnboardCopilot -->
