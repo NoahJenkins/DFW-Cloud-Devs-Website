@@ -8,11 +8,17 @@ updates:
       time: "08:00"
       timezone: "America/Chicago"
     open-pull-requests-limit: 10
+    reviewers:
+      - "NoahJenkins"
+    assignees:
+      - "NoahJenkins"
     labels:
       - dependencies
       - security
+      - automated
     commit-message:
       prefix: "deps"
+      include: "scope"
     ignore:
       - dependency-name: "next"
         update-types:
@@ -23,3 +29,23 @@ updates:
       - dependency-name: "react-dom"
         update-types:
           - "version-update:semver-major"
+
+  # Enable version updates for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "08:30"
+      timezone: "America/Chicago"
+    open-pull-requests-limit: 5
+    reviewers:
+      - "NoahJenkins"
+    assignees:
+      - "NoahJenkins"
+    commit-message:
+      prefix: "ci"
+      include: "scope"
+    labels:
+      - "github-actions"
+      - "automated"
