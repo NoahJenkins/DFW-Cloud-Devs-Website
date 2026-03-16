@@ -20,6 +20,7 @@ Last Updated: 2026-03-03
 - [x] Review secret handling and `.gitignore` coverage
 - [x] Address critical/high findings
 - [x] Execute dependency remediation plan (`docs/context/2026-03-02-dependency-remediation-plan.md`) *(Phase 1 + Phase 2 complete)*
+- [x] Fix high-severity `flatted` CVE (unbounded recursion DoS) — pinned to `^3.4.1` via `pnpm.overrides`
 - [x] Add Dependabot or Renovate for automated security updates
 - [x] Add CI audit gate for dependency vulnerabilities
 - [x] Modernize direct React dependencies (patch-level)
